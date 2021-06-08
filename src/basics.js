@@ -1,8 +1,76 @@
-// alert("Welcome to the Traversy Media  javascript crash course");
+// alert("Welcome to the Traversy Media javascript crash course");
 // console_test();
 // variables_test();
 // strings_test();
-arrays_test();
+// arrays_test();
+// object_literals();
+// js_arrays();
+js_loops();
+
+function js_loops() {
+  // for loop
+  for (let i = 0; i < 10; i++) {
+    console.log(i);
+  }
+
+  // while loop
+  let i = 0;
+  while (i < 10) {
+    console.log(i);
+    i++;
+  }
+}
+
+function js_arrays() {
+  let todo = [
+    {
+      id: 1,
+      description: "study js and nodejs",
+      isCompleted: false,
+    },
+    {
+      id: 2,
+      description: "study rust",
+      isCompleted: false,
+    },
+    {
+      id: 3,
+      description: "get to work",
+      isCompleted: false,
+    },
+  ];
+
+  console.log(todo);
+
+  // convert to jason string
+  const todo_json = JSON.stringify(todo);
+  console.log(todo_json);
+}
+
+function object_literals() {
+  const person = {
+    first_name: "Ammar",
+    last_name: "Shahin",
+    age: 30,
+    hobbies: ["music", "movies", "sports"],
+    address: {
+      city: "cairo",
+      street: "bolak",
+    },
+  };
+
+  // destruction an object
+  const {
+    first_name,
+    last_name,
+    address: { city },
+  } = person;
+
+  // add an element to the structure
+  person.email = "ammar@gmail.com";
+  console.log(person);
+  console.log(first_name, last_name, city);
+}
 
 function arrays_test() {
   let arr1 = new Array(); // create an empty array with an constructor
@@ -13,7 +81,6 @@ function arrays_test() {
   console.log("arr :", arr2);
 
   // check if it's an array
-
   console.log(Array.isArray(arr2)); // true
   console.log(Array.isArray("ammar")); // false
   console.log(arr2.indexOf("Shahin")); // print the index of the element Shahin in the array and -1 if it wasn't found
