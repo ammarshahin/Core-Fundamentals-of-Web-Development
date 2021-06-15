@@ -1,9 +1,9 @@
 # Core-Fundamentals-of-Web-Development
 
-- Traversy Media JavaScript Crash Course For Beginners
+ <h3> Traversy Media </h3>
 
-  https://www.youtube.com/watch?v=hdI2bqOjy3c&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&t=1009s&ab_channel=TraversyMedia
+  *  [Vanilla JavaScript](https://www.youtube.com/watch?v=hdI2bqOjy3c&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&t=1009s&ab_channel=TraversyMedia)
 
-- James Q Quick Core Fundamentals of Web Development course
+<h3> James Q Quick </h3>
 
-  https://www.youtube.com/playlist?list=PLDlWc9AfQBfaO1IX02_1L5MW2s9RyIgQ7
+  * [Core Fundamentals of Web Development course](https://www.youtube.com/playlist?list=PLDlWc9AfQBfaO1IX02_1L5MW2s9RyIgQ7)
