@@ -6,9 +6,9 @@
 // object_literals();
 // js_arrays();
 // js_loops();
-// js_higherOrderFunctions();
+js_higherOrderFunctions();
 // js_conditions();
-js_functions();
+// js_functions();
 
 function js_functions() {
   console.log(add_numbers(10, 20));
@@ -55,25 +55,26 @@ function js_higherOrderFunctions() {
 
   //* forEach iterates over each element of the array and do what's in the body of the callback function
   arr.forEach((element) => {
-    console.log(element);
+    // console.log(element);
+  });
+
+  arr2 = arr.filter((element) => {
+    return element === 10;
   });
 
   //* map iterate over an array and returns a new array with restricted conditions
-  arr2 = arr.map((element) => {
+  arr3 = arr.map((element) => {
     if (element == 10) {
       return element * 2;
     }
     return element;
   });
 
-  arr3 = arr.filter((element) => {
-    return element === 10;
-  });
+  // console.log("arr :", arr);
+  // console.log("arr :", arr2);
+  // console.log("arr :", arr3);
 
-  console.log("arr :", arr);
-  console.log("arr :", arr2);
-  console.log("arr :", arr3);
-
+  //! Another example
   let todo = [
     {
       id: 1,
@@ -92,15 +93,26 @@ function js_higherOrderFunctions() {
     },
   ];
 
-  const todoText = todo.forEach((element) => {
-    console.log(element.description);
+  //* forEach
+  todo.forEach((element) => {
+    //console.log(element.description);
   });
 
+  //* map
   const todoIdArray = todo.map((element) => {
     return element.id;
   });
-  console.log("todoIdArray :", todoIdArray);
 
+  //console.log("todoIdArray :", todoIdArray);
+
+  const todoTextInOneLine = todo.map(
+    (element) =>
+      `${element.id}. ${element.description} and is ${element.isCompleted}`
+  );
+
+  // console.log("todoTextInOneLine :", todoTextInOneLine);
+
+  //* filter + map
   const todoCompleted = todo
     .filter((element) => {
       return element.isCompleted === true;
@@ -108,7 +120,16 @@ function js_higherOrderFunctions() {
     .map((element) => {
       return element.description;
     });
-  console.log("todoCompleted :", todoCompleted);
+  // console.log("todoCompleted :", todoCompleted);
+
+  //* sort
+  let todoSorted = todo.sort((a, b) => (a.id < b.id ? 1 : -1));
+  console.log("todoSorted :", todoSorted);
+
+  //* reduce  >> takes an array and convert it to single value
+  // here we add the id's
+  let todoSingleValue = todo.reduce((total, element) => total + element.id, 0);
+  console.log("todoSingleValue :", todoSingleValue);
 }
 
 function js_loops() {
