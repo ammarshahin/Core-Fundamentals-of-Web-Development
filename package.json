@@ -1,0 +1,19 @@
+{
+  "name": "core-fundamentals-of-web-development",
+  "version": "1.0.0",
+  "description": "<h3> core-fundamentals-of-web-development </h3>",
+  "main": "src/Traversy Media/node_js/node.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@personal:ammarshahin/Core-Fundamentals-of-Web-Development.git"
+  },
+  "author": "ammar shahin",
+  "license": "ISC"
+}
