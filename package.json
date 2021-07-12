@@ -4,7 +4,8 @@
   "description": "<h3> core-fundamentals-of-web-development </h3>",
   "main": "src/Traversy Media/node_js/node.js",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {},
   "scripts": {
