@@ -2,14 +2,15 @@
   "name": "core-fundamentals-of-web-development",
   "version": "1.0.0",
   "description": "<h3> core-fundamentals-of-web-development </h3>",
-  "main": "src/Traversy Media/node_js/node.js",
+  "main": "src/Traversy Media/node_js/http/index.js",
   "dependencies": {
     "live-server": "^1.2.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon src/Traversy Media/node_js/http/index.js"
   },
   "repository": {
     "type": "git",
